@@ -23,7 +23,7 @@ jobs:
 
     - name: Run server binary and capture output
       run: |
-        ./bombsquad_server > server-output.log 2>&1 &
+        ./bombsquad_server >> server-output.log 2>>server-output.log &
         SERVER_PID=$!
         sleep 60  # let it run for 30 seconds
         kill $SERVER_PID  # terminate the server
