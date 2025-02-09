@@ -33,7 +33,7 @@ jobs:
           echo "Error message found. Check server-output.log for details."
           exit 1
         elif ! grep -q "entering server-mode" server-output.log; then
-          echo "Success message not found in server's output."
+          cat server-output.log
           exit 1
         fi
     - name: Upload server output as artifact
