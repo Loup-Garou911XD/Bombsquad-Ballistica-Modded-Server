@@ -17,6 +17,7 @@ party_name = "BombSquad Community Server"
 # should always be enabled unless you are hosting on a LAN with no
 # internet connection.
 #authenticate_clients = true
+log_levels = ["DEBUG"]
 
 # IDs of server admins. Server admins are not kickable through the
 # default kick vote system and they are able to kick players without
