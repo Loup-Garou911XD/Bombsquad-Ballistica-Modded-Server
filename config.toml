@@ -174,3 +174,4 @@ team_colors = [[0.8, 0.0, 0.6], [0, 1, 0.8]]
 #[log_levels]
 "ba.lifecycle" = "DEBUG"
 "ba.assets" = "DEBUG"
+"ba.app" = "DEBUG"
