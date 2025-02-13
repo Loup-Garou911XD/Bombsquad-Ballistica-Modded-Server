@@ -167,3 +167,10 @@ team_colors = [[0.8, 0.0, 0.6], [0, 1, 0.8]]
 # before rejoining the game. This can help suppress exploits
 # involving leaving and rejoining or switching teams rapidly.
 #player_rejoin_cooldown = 10.0
+
+# Log levels for particular loggers, overriding the engine's
+# defaults. Valid values are NOTSET, DEBUG, INFO, WARNING, ERROR, or
+# CRITICAL.   
+#[log_levels]
+"ba.lifecycle" = "DEBUG"
+"ba.assets" = "DEBUG"
