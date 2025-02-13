@@ -23,10 +23,7 @@ jobs:
 
     - name: Run server binary and capture output
       run: |
-        ./bombsquad_server &>server-output.log &
-        SERVER_PID=$!
-        sleep 30  # let it run for 30 seconds
-        kill $SERVER_PID  # terminate the server
+        ./bombsquad_server
     - name: Check server output for success message
       run: |
         if grep -E "Exception|RuntimeError" server-output.log; then 
